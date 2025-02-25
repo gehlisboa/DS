@@ -1,0 +1,23 @@
+<!-- ### Lista de Compra no Supermercado
+
+Solicite ao usuário para digitar o nome de um produto que irá comprar no mercado e salve os produtos no array Produtos. 
+
+Pergunte ao usuário se deseja adicionar mais um produto a lista. 
+
+Use `forEach`para exibir todos os produtos cadastrados. -->
+
+<script>
+      let compras = [];
+    let continuar ='sim';
+
+    while(continuar == 'sim') {
+        compras.push(prompt('Digite o nome de um produto:'));
+        continuar = prompt('Deseja adicionar mais algum produto na lista de compras? sim/nao');
+    }
+
+    console.log('Lista de compras: ');
+
+    compras.forEach(function(compras) {
+    console.log(compras);
+    })
+</script>
