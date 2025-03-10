@@ -1,0 +1,29 @@
+<!-- Crie um script no qual irá digitar o nome dos veículos.
+O usúario poderá cadastrar quantos veículos desejar.
+
+Ao finalizar, exiba todos os veículos cadastrados em console.log() -->
+
+<script>
+    let veiculo = [];
+    let continuar ='sim';
+
+    while(continuar == 'sim') {
+        veiculo.push(prompt('Cadastre um veiculo:'));
+        continuar = prompt('Deseja adicionar mais algum veiculo? sim/nao');
+        continuar = continuar.toLowerCase();
+        // toLowerCase ssrve para converter tudo para minusculo
+    }
+
+    console.log('Lista de veiculos: ');
+
+    veiculo.forEach(function(veiculo) {
+    console.log(veiculo);
+    })
+
+
+    // for (let index = 0; index < veiculo.length; index++) {
+    //     console.log(veiculo[index]);
+        
+    // }
+    
+</script>
