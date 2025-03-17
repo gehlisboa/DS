@@ -10,6 +10,21 @@ Ex: Carlinhos (10 gols) -->
 
 <script>
     let jogador = [];
-    jogador.push(prompt('Informe o nome do jogador'));
+     let gols= [];
+     let continuar = 'sim'
+     
+     while (continuar =='sim') {
+      jogador.push(prompt('digite o nome de um jogador:'));
+      gols.push(prompt('digite o número de gols do jogador:'));  
+      continuar = prompt('deseja adicionar outro jogador ?');
+     }
 
+     
+     
+    
+     jogador.forEach(function (jog, index) {
+       console.log ('O jogador ' + jog + ' fez ' + gols[index] + ' gols');
+       
+      
+     })
 </script>

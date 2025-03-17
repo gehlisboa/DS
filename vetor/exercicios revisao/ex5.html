@@ -10,12 +10,12 @@ Solicite ao usuário para digitar 5 números inteiros, guarde os valores em um a
     let total = 0;
 
     while(contador <= limite) {
-        numeros.push (parseFloat(prompt('Digite um número:')));
+        numeros.push(parseFloat(prompt('Digite um número:')));
         contador++
     }
 
-    numeros.forEach(function(numeros) {
-     total = total + numeros;
+    numeros.forEach(function(num) {
+     total = total + num;
     })
 
     console.log(total);
