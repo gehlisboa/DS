@@ -1,0 +1,16 @@
+<script>
+    let numeros = [];
+    let continuar = 'sim'
+
+    while(continuar == 'sim') {
+        numeros.push(parseFloat(prompt('Digite um número:')));
+        continuar = prompt('Deseja digitar mais algum número? sim/não');
+    }
+
+    numeros.forEach(function(numeros) {
+    if(numeros < 0){
+        console.log(numeros);
+    }
+    });
+
+</script>
