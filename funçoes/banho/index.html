@@ -1,0 +1,71 @@
+<script>
+
+    let lampada = true;
+    let roupa = true;
+    let ligado = true;
+    let chuveiro = true;
+    
+    verificarOndeEstou('cadeira');
+    
+    function verificarOndeEstou(local){
+        if(local == 'cadeira')
+        levantar();
+    
+        if(local == 'em pé')
+        caminharAteLampada();
+    
+        if(local == 'em deitado')
+        levantar();
+    }
+    
+    function levantar(){
+        console.log('Você levantou!');
+    }
+    
+    caminharAteBanheiro();
+    
+    function caminharAteBanheiro(){
+        console.log('Caminhando até o banheiro');
+    }
+    
+    acenderLampada();
+    
+    function acenderLampada(){
+        if (lampada == true){
+            console.log('A lampada está acesa!');
+        }else if(lampada == false){
+            console.log(' A lampada está apagada!');
+        }
+    }
+
+    tirarRoupa();
+
+    function tirarRoupa(){
+        if (roupa == true){
+            console.log('você tirou a roupa');
+        }else{
+            console.log('você não tirou a roupa');
+        }
+    }
+
+    ligarChuveiro();
+
+    function ligarChuveiro(){
+        if (ligado == true){
+            console.log('O chuveiro está ligado');
+        }else{
+            console.log('O chuveiro está desligado, ligue!');
+        }
+    }
+
+     
+    entrarNoChuveiro();
+
+    function entrarNoChuveiro(){
+        if (chuveiro == true){
+        console.log('Você entrou no chuveiro');
+    }else{
+        console.log('Você não entrou no chuveiro ainda!');
+    }
+}
+</script>

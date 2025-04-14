@@ -1,0 +1,37 @@
+<script>
+
+let lampada = true;
+
+verificarOndeEstou('cadeira');
+
+function verificarOndeEstou(local){
+    if(local == 'cadeira')
+    levantar();
+
+    if(local == 'em pé')
+    caminharAteLampada();
+
+    if(local == 'em deitado')
+    levantar();
+}
+
+function levantar(){
+    console.log('Você levantou!');
+}
+
+caminharAteLampada();
+
+function caminharAteLampada(){
+    console.log('Caminhando até o interruptor');
+}
+
+acenderLampada();
+
+function acenderLampada(){
+    if (lampada == true){
+        console.log('A lampada está acesa!');
+    }else if(lampada == false){
+        console.log(' A lampada está apagada!');
+    }
+}
+</script>
