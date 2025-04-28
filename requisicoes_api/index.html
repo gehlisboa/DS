@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>requisiçao de API</title>
+</head>
+<body>
+
+    <input type="text" id="input-search">
+
+    <button onclick="getCountry()">Consultar País</button>
+
+    <script>
+
+        let country = input_search.value;
+        let url = `https://restcountries.com/v3.1/name/${country}`;
+
+        function getCountry(){
+            let input_search = document.querySelector('#input-search');
+
+            let country = input_search.value;
+            let url = `https://restcountries.com/v3.1/name/${country}`;
+
+
+            fetch(url)
+            .then(resp => resp.json())
+            .then(dados => { console.log(dados) })
+            .catch(erro => {
+            console.log(erro);
+        })
+            .finally(()=>{
+            console.log('Requisição Finalizada')
+        })
+        }
+
+        // funçao e return implicito
+        // converteu em json
+        // se tem chave nao tem return
+        // para erro inesperado: catch
+    </script>
+    
+</body>
+</html>
