@@ -82,6 +82,13 @@ function search(){
     let timezones = document.createElement('h6');
     timezones.innerText = country.timezones;
 
+    let area = document.createElement('h6');
+    area.innerText = country.area;
+
+    let fifa = document.createElement('h6');
+    fifa.innerText = country.fifa;
+
+
     let col = document.createElement('div');
     col.classList.add("col-3");
 
@@ -98,6 +105,8 @@ function search(){
     col.appendChild(independent);
     col.appendChild(coatOfArms);
     col.appendChild(timezones);
+    col.appendChild(area);
+    col.appendChild(fifa);
     
     countries_list.appendChild(col);
 
