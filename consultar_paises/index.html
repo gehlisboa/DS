@@ -88,6 +88,9 @@ function search(){
     let fifa = document.createElement('h6');
     fifa.innerText = country.fifa;
 
+    let startOfWeek = document.createElement('h6');
+    startOfWeek.innerText = country.startOfWeek;
+
 
     let col = document.createElement('div');
     col.classList.add("col-3");
@@ -107,6 +110,7 @@ function search(){
     col.appendChild(timezones);
     col.appendChild(area);
     col.appendChild(fifa);
+    col.appendChild(startOfWeek);
     
     countries_list.appendChild(col);
 
