@@ -48,7 +48,10 @@
     </div>
 
 <script>
-  fetch("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+
+  
+  
+fetch("https://api.nasa.gov/planetary/apod?api_key=vYxuyVbLWOgrCFoMAjYLgqVioirvXmG4KdypIdKK")
     .then(res => res.json())
     .then(dados => {
       document.getElementById("titulo").textContent = dados.title;
