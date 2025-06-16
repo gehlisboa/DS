@@ -48,10 +48,7 @@
     </div>
 
 <script>
-
-  
-  
-fetch("https://api.nasa.gov/planetary/apod?api_key=vYxuyVbLWOgrCFoMAjYLgqVioirvXmG4KdypIdKK")
+fetch("https://api.nasa.gov/planetary/apod?api_key=2CqY6b4GddYUgaq6gqjliArDVsIMJ0QTPWMo7euD")
     .then(res => res.json())
     .then(dados => {
       document.getElementById("titulo").textContent = dados.title;

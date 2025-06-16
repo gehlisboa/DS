@@ -103,5 +103,17 @@
       padding: 15px;
     }
     
+    .card {
+      border: 2px solid rgb(78, 78, 131);
+      border-radius: 10px;
+      background-color: #121828;
+      font-family: "Silkscreen", sans-serif;
+      color: rgb(184, 184, 248);
+      transition: transform 0.3s ease;
+    }
     
-
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgb(184, 184, 248);
+    }
+    
