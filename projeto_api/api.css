@@ -19,13 +19,11 @@
 
 .navbar-brand {
   color: #f8f8f7 !important; 
-  font-family: "Silkscreen", sans-serif;
   font-weight: 700;
   font-size: 20px;
 }
 
 .nav-link { 
-  font-family: "Silkscreen", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ffffff !important;
@@ -86,7 +84,6 @@ form input[type="search"]:hover {
 .accordion-item {
   margin-bottom: 10px;
   border-radius: 6px;
-  font-family: "Silkscreen", cursive;
 }
     
 .accordion-button {
@@ -98,7 +95,6 @@ form input[type="search"]:hover {
 .accordion-body {
   background-color: #0b0c10;
   color: #f3f6fc;
-  font-family: "Silkscreen", cursive;
   font-size: 14px;
   padding: 15px;
     }
@@ -107,7 +103,6 @@ form input[type="search"]:hover {
   border: 2px solid rgb(78, 78, 131);
   border-radius: 10px;
   background-color: #121828;
-  font-family: "Silkscreen", sans-serif;
   color: rgb(184, 184, 248);
   transition: transform 0.3s ease;
 }
@@ -117,37 +112,14 @@ form input[type="search"]:hover {
   box-shadow: 0 0 10px rgb(184, 184, 248);
 }
 
+.container-fluid.bg-custom img {
+  box-shadow: 0 0 10px rgba(184, 184, 248, 0.5);
+}
 
-#titulo, #data, #descricao {
+* {
   font-family: "Silkscreen", sans-serif;
-  color: rgb(184, 184, 248);
-  text-shadow: 1px 1px 2px black;
 }
-
-#titulo {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#data {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-#descricao {
-  font-size: 1rem;
-  max-width: 80%;
-  line-height: 1.5;
-  margin: 0 auto;
-}
-
-.titulo-marte {
-  font-family: "Silkscreen", sans-serif;
-  color: rgb(184, 184, 248);
-  text-shadow: 1px 1px 2px black;
-  font-size: 2rem;
-}
-
-
-
     
+.titulo{
+  color: rgb(184, 184, 248); 
+}
