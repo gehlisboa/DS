@@ -59,7 +59,7 @@ function carregarAPOD() {
     })
     .then(dados => {
       const container = document.getElementById('objetos');
-      container.innerHTML = ''; // apenas limpa onde vai as imagens
+      container.innerHTML = ''; 
 
       dados.forEach(item => {
         if (item.media_type === 'image') {

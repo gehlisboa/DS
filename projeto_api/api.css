@@ -1,5 +1,5 @@
 .bg-custom {
-  background-color: #040308;
+  background-color: #101018;
   min-height: 100vh; 
   width: 100%;
   display: flex;
@@ -124,7 +124,7 @@ form input[type="search"]:hover {
 }
     
 .titulo{
-  color: rgb(184, 184, 248); 
+  color :rgb(184, 184, 248);
 }
 
 
