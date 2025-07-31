@@ -1,0 +1,94 @@
+<script>
+    class Veiculo {
+        constructor(marca, modelo){
+            this.marca = marca;
+            this.modelo = modelo;
+
+        }
+
+        acelerar(){
+            console.log(`${this.modelo} acelerou!!!`);
+        }
+        freiar(){
+            console.log(`${this.modelo} freiou!!!`);
+        }
+    }
+    let veiculo_1 = new Veiculo('Fiat','Uno 1994');
+    console.log(`seu veiculo é ${veiculo_1.modelo}`);
+    veiculo_1.acelerar();
+    veiculo_1.freiar();
+
+    console.log(veiculo_1);
+
+    class Pessoa{
+        constructor(nome,cpf,idade,telefone){
+            this.nome = nome;
+            this.cpf = cpf;
+            this.idade = idade;
+            this.telefone = telefone;
+        }
+
+        //Acões | Metódo 
+
+        correr (){
+           console.log(`${this.nome} correu !`);
+        }
+        pular(){
+            console.log(`${this.nome} pulou!`);
+        }
+        falar(){
+            console.log(`${this.nome} disse Olá!`);
+        }
+    }
+
+    let pessoa = new Pessoa('Vick','240.100.061-33','17','15 996830434');
+    pessoa.correr();
+    pessoa.pular();
+    pessoa.falar();
+
+  //Animal
+
+    class Animal{
+        constructor(nome,especie,porte,raça,cor){
+            this.nome = nome;
+            this.especie = especie;
+            this.porte = porte;
+            this.raça = raça;
+            this.cor = cor;
+        }
+
+        dormir(){
+            console.log(`${this.nome} dormiu!`);
+        }
+        comer(){
+            console.log(`${this.nome} comeu!`);
+        }
+        brincar(){
+            console.log(`${this.nome} brincou!`);
+        }
+    } 
+    
+    
+ 
+    class Cachorro extends Animal {
+        constructor(nome,especie,porte,raça,cor,peso){
+            super(nome,especie,porte,raça,cor);
+            this.peso = peso;
+        }
+
+        latir(){
+            console.log(`${this.nome} Latiu!`)
+        };
+    }
+    
+    // let animal = new Animal('baby','cachorro','pequeno','vira-lata','preta');
+    // animal.dormir();
+    // animal.comer();
+    // animal.brincar();
+
+    let cao = new Cachorro ('baby','cachorro','pequeno','vira-lata','preta','4kg');
+    cao.latir();
+   
+
+
+</script>

@@ -1,0 +1,71 @@
+<script>
+    class Pessoa {
+        constructor(nome, idade, cpf){
+            this.nome = nome;
+            this.idade = idade;
+            this.cpf = cpf;
+        }
+
+        falar(){
+            console.log('Olá');
+        }
+
+        andar(){
+            console.log('A pessoa andou!');
+        }
+    }
+ 
+    // declarar os parametros passados no método constructor
+    let professor = new Pessoa('Carlitos', '20', '123'); 
+    console.log(professor.nome);
+    console.log(professor.idade);
+    console.log(professor.cpf);
+    console.log(professor.falar());
+    console.log(professor.andar());
+
+    let aluno = new Pessoa ('Hipaminondas', '16', '333');
+    console.log(aluno);
+</script>
+
+<script>
+    // crie a classe usuario, 
+    // o usuario podera ser do tipo adm ou usuario comum. 
+    // é necessario email e senha para o usuario. 
+    // é necessario saber se o usuario esta online ou offline
+
+    class Usuario {
+        constructor(nome, tipo, email, senha, status){
+            this.nome = nome;
+            this.tipo = tipo;
+            this.email = email;
+            this.senha = senha;
+            this.status = status;
+        } 
+        conectar(){
+            console.log('Usuario conectado com sucesso');
+        }
+
+        desconectar(){
+            console.log('Usuario desconectado');
+        }
+
+        recuperarSenha(){
+            console.log('Email de recuperaão enviado');
+        }
+
+        trocarSenha(){
+            console.log('Senha Atualizada')
+        }
+
+        AlterarTipo(){
+            console.log('O tipo de conta foi atualizada')
+        }
+    }
+
+    let usuario = new Usuario('Geovanna','admin', 'g@gmail', '123', 'online');
+    usuario.conectar();
+    usuario.desconectar();
+    usuario.recuperarSenha();
+    usuario.trocarSenha();
+    usuario.AlterarTipo();
+</script>
