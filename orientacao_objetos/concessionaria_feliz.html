@@ -1,0 +1,79 @@
+<script>
+    //Crie uma classe para veiculos
+    // add 4 propriedades para o veiculo
+    // add os setters e getters
+    //crie uma função para caulcular quantos anos o veiculo tem. ex: 2025 - 1990
+    // crie 3 instancias de veiculos
+
+    class Veiculo{
+    constructor(nome, placa, ano_venda, ano_fabricacao){
+        this.nome = nome;
+        this.placa= placa;
+        this.ano_venda = ano_venda;
+        this.ano_fabricacao = ano_fabricacao;
+    }
+
+    set nomeVeiculo(nome){
+        this.nome = nome;
+    }
+
+    get nomeVeiculo(){
+        return this.nome;
+    }
+
+    set placaVeiculo(placa){
+        this.placa = placa;
+    }
+
+    get placaVeiculo(){
+        return this.placa;
+    }
+
+    set anoFabricacao(ano_fabricacao){
+        this.ano_fabricacao = ano_fabricacao;
+    }
+
+    get anoFabricacao(){
+        return this.ano_fabricacao;
+    }
+
+    set anoVenda(ano_venda){
+        this.ano_venda = ano_venda;
+    }
+
+    get anoVenda(){
+        return this.ano_venda;
+    }
+
+
+
+    calcularAnos(){ 
+        return this.ano_venda - this.ano_fabricacao;
+
+    }
+}
+
+let bmw = new Veiculo();
+bmw.nomeVeiculo = 'BMW';
+programador_backend.salarioBase = 50;
+programador_backend.horasTrabalhadas = 100;
+console.log(programador_backend.calcularSalario());
+
+let desenvolvedor_frontend = new Funcionario();
+desenvolvedor_frontend.nomeFuncionario = 'Joaquim';
+desenvolvedor_frontend.salarioBase = 10;
+desenvolvedor_frontend.horasTrabalhadas = 200;
+console.log(desenvolvedor_frontend.calcularSalario());
+
+let gerente = new Funcionario();
+gerente.nomeFuncionario = 'Genivaldo';
+gerente.salarioBase = 20
+gerente.horasTrabalhadas = 100;
+console.log(gerente.calcularSalario());
+
+let ux_design = new Funcionario();
+ux_design.nomeFuncionario = 'Bruno';
+ux_design.salarioBase = 60;
+ux_design.horasTrabalhadas = 100;
+console.log(ux_design.calcularSalario());
+</script>
