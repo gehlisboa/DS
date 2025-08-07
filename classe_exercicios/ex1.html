@@ -1,0 +1,47 @@
+<script>
+    class Pessoa {
+        constructor(nome, idade, profissao){
+            this.nome = nome;
+            this.idade = idade;
+            this.profissao = profissao;
+        } 
+        
+        set nomePessoa(nome){
+            this.nome = nome;
+        }
+
+        get nomePessoa(){
+            return this.nome;
+        }
+          
+        set idadePessoa(idade){
+            this.idade = idade;
+        }
+
+        get idadePessoa(){
+            return this.idade;
+        }
+
+        set profissaoPessoa(profissao){
+            this.profissao = profissao;
+        }
+
+        get profissaoPessoa(){
+            return this.profissao;
+        }
+
+        apresentarPessoa(){
+            return " meu nome é " + this.nome + " tenho " + this.idade +  " anos" + " sou " + this.profissao;
+        }
+    }
+       
+
+    let pessoa_1 = new Pessoa()
+    pessoa_1.nomePessoa = 'Alice';
+    pessoa_1.idadePessoa = 20;
+    pessoa_1.profissaoPessoa = 'Biomédica';
+
+    console.log(pessoa_1.apresentarPessoa());
+   
+
+</script>
