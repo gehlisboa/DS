@@ -1,0 +1,50 @@
+<script>
+    class ContaBancaria {
+        constructor(titular, saldo = 0, numeroConta) {
+            this.titular = titular;
+            this.saldo = saldo;
+            this.numeroConta = numeroConta;
+    }
+
+    getTitular() {
+        return this.titular;
+    }
+
+    getSaldo() {
+        return this.saldo;
+    }
+
+    getNumeroConta() {
+        return this.numeroConta;
+    }
+
+    depositar(valor) {
+        if (valor > 0) {
+            this.saldo = this.saldo + valor;
+            console.log("Depósito de R$ " + valor + " realizado com sucesso.");
+        } else {
+            console.log("Depósito inválido");
+        }
+    }
+
+    sacar(valor) {
+        if (valor > 0 && valor <= this.saldo) {
+            this.saldo = this.saldo - valor;
+            console.log("Saque de R$ " + valor + " realizado com sucesso.");
+        } else {
+            console.log("Saque inválido.");
+        }
+    }
+
+    exibirSaldo() {
+        console.log("Saldo atual: R$ " + this.saldo);
+    }
+}
+
+let conta_1 = new ContaBancaria("Geovanna", 500, "12345-6");
+conta_1.exibirSaldo();   
+conta_1.depositar(200);  
+conta_1.sacar(100);      
+conta_1.exibirSaldo();   
+
+</script>

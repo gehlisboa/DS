@@ -31,17 +31,20 @@
         }
 
         apresentarPessoa(){
-            return " meu nome é " + this.nome + " tenho " + this.idade +  " anos" + " sou " + this.profissao;
+            return " meu nome é " + this.nome + " tenho " + this.idade +  " anos" +  this.profissao;
         }
     }
        
 
     let pessoa_1 = new Pessoa()
-    pessoa_1.nomePessoa = 'Alice';
+    pessoa_1.nomePessoa = 'Alice \n' ;
     pessoa_1.idadePessoa = 20;
-    pessoa_1.profissaoPessoa = 'Biomédica';
+    pessoa_1.profissaoPessoa = '\n Biomédica';
 
     console.log(pessoa_1.apresentarPessoa());
+
+
+
    
 
 </script>
