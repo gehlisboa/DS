@@ -9,22 +9,31 @@
   </head>
   <body>
 
-
     <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="col-4">
+        <div class="card shadow">
+          <div class="d-flex align-items-center">
+        
+  
+        <div class="col-md-4 d-flex justify-content-center"> 
+          <img src="https://w0.peakpx.com/wallpaper/292/247/HD-wallpaper-yoda-fighter-jedi-master-star-wars.jpg" class="img" alt="img"> 
+        </div>
+    
+        <div class="col-md-6">
           <div class="card shadow p-3 m-2">
             <form>
               <div class="mb-3">
-                <label for="pergunta">Sua pergunta digite:</label>
-                <input type="text" name="pergunta" id="pergunta" placeholder="...">
+                <label for="pergunta" class="form-label">Digite sua pergunta:</label>
+                <input type="text" class="form-control" name="pergunta" id="pergunta" placeholder="...">
               </div>
-              <button class="btn btn-dark" onclick="perguntar()">Perguntar</button>
+              <button type="button" class="btn btn-dark" onclick="perguntar()">Perguntar</button>
             </form>
           </div>
         </div>
-      </div>
+    
+          </div>
+        </div>
     </div>
+    
 
     <div class="container-fluid">
       <div class="row d-flex justify-content-center">
@@ -33,40 +42,40 @@
           <div class="card shadow p-3 m-2">Resposta do Yoda</div>
         </div>
       </div>
-    </div>
+    </div> 
 
 
     <script>
-      let pergunta = document.getElementById('pergunta').value;
-      const KEY = ``;
-      const URL = `https://api.openai.com/v1/chat/completions`;
+      // let pergunta = document.getElementById('pergunta').value;
+      // const KEY = ``;
+      // const URL = `https://api.openai.com/v1/chat/completions`;
 
 
-      fetch(URL, {
-        method: 'POST', //post, get, delete, put
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${KEY}`
-        },
-        body: JSON.stringify({
-          model: 'gpt-4o-mini',
-          messages: [
-            { role: 'system', content: 'Me responda como se você fosse o metre Yoda, de forma curta e clara'},
-            { role: 'user', content: pergunta },
-          ],
-          max_tokens: 50
-        })
-      })
-      .then(resp => resp.json())
-      .then(resp => {
-        console.log(resp);
-      })
-      .catch(eroo => {
-        console.log(erro);
-      })
-      .finally(()=>{
-        console.log('Finalizado');
-      })
+      // fetch(URL, {
+      //   method: 'POST', //post, get, delete, put
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     'Authorization': `Bearer ${KEY}`
+      //   },
+      //   body: JSON.stringify({
+      //     model: 'gpt-4o-mini',
+      //     messages: [
+      //       { role: 'system', content: 'Me responda como se você fosse o metre Yoda, de forma curta e clara'},
+      //       { role: 'user', content: pergunta },
+      //     ],
+      //     max_tokens: 50
+      //   })
+      // })
+      // .then(resp => resp.json())
+      // .then(resp => {
+      //   console.log(resp);
+      // })
+      // .catch(eroo => {
+      //   console.log(erro);
+      // })
+      // .finally(()=>{
+      //   console.log('Finalizado');
+      // })
     </script>
     
 
